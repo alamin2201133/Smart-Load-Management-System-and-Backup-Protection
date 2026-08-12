@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Al Amin Islam - Smart Load Management</title>
+    <meta name="description" content="Smart Load Management and Backup Protection System using Arduino and INA219.">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Left Sidebar Styling */
+        .sidebar {
+            width: 280px;
+            background-color: #252e3d;
+            padding: 24px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-shrink: 0;
+        }
+
+        .name-card {
+            background-color: #d93856;
+            color: #ffffff;
+            padding: 24px 16px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .sidebar-box {
+            background-color: #1b222d;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .sidebar-box h3 {
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .btn-red {
+            display: block;
+            background-color: #d93856;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            padding: 12px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 1.3;
+            transition: background 0.2s;
+        }
+
+        .btn-red:hover {
+            background-color: #b82a44;
+        }
+
+        .sidebar-box p {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            flex: 1;
+            background-color: #f3f4f6;
+            padding: 50px 40px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-section h1 {
+            font-size: 2.2rem;
+            color: #111827;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .header-section h2 {
+            font-size: 1.4rem;
+            color: #1f2937;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .header-section h3 {
+            font-size: 1.4rem;
+            color: #1f2937;
+            font-weight: 700;
+        }
+
+        .content-section {
+            margin-top: 30px;
+            max-width: 850px;
+        }
+
+        .content-section h4 {
+            font-size: 1.1rem;
+            color: #1f2937;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .members-list {
+            padding-left: 20px;
+            color: #374151;
+            font-size: 1rem;
+            line-height: 1.8;
+            font-weight: 600;
+        }
+
+        .pdf-viewer {
+            margin-top: 30px;
+            width: 100%;
+            height: 600px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+            .main-content {
+                padding: 30px 20px;
+            }
+            .header-section h1 {
+                font-size: 1.6rem;
+            }
+            .header-section h2, .header-section h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="name-card">
+                Md. Al Amin Islam
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Project Report:</h3>
+                <!-- Opens PDF in browser viewer -->
+                <a href="report.pdf" target="_blank" class="btn-red">
+                    View / Download<br>Report (PDF)
+                </a>
+            </div>
+
+            <div class="sidebar-box">
+                <p>
+                    <strong>About Me:</strong> EEE Student at RUET | Field of interest: Power Electronics, Control, and Smart Grid Solutions.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header-section">
+                <h1>Smart Load Management and Backup Protection System</h1>
+                <h2>Department of Electrical & Electronic Engineering (EEE)</h2>
+                <h3>Rajshahi University of Engineering & Technology (RUET)</h3>
+            </div>
+
+            <div class="content-section">
+                <h4>Project Team:</h4>
+                <ol class="members-list">
+                    <li>Md. Al Amin Islam</li>
+                </ol>
+            </div>
+
+            <!-- PDF Viewer directly on page -->
+            <div class="content-section">
+                <h4>Project Document Preview:</h4>
+                <iframe src="report.pdf" class="pdf-viewer"></iframe>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
