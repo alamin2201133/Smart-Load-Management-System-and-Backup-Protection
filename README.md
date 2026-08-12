@@ -4,7 +4,7 @@
 *Rajshahi University of Engineering & Technology (RUET), Bangladesh*  
 **Authors**: Md. Al Amin Islam & Team
 
-📄 **[View/Download Full Project Report (PDF)](<Smart Load Management and Backup Protection1.pdf>)**
+📄 **[View/Download Full Project Report (PDF)](<report.pdf>)**
 
 ---
 
