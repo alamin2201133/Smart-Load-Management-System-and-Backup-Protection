@@ -4,7 +4,7 @@
 *Rajshahi University of Engineering & Technology (RUET), Bangladesh*[cite: 1]  
 **Authors**: Md. Al Amin Islam & Team[cite: 1]
 
-📄 **[View/Download Full Project Report (PDF)](report.pdf)**[cite: 1]
+📄 **[View/Download Full Project Report (PDF)](Smart Load Management and Backup Protection1.pdf)**[cite: 1]
 
 ---
 
@@ -45,7 +45,7 @@ This project presents a low-cost, microcontroller-based battery monitoring and p
 
 | Prototype Hardware Setup | Overcurrent Alarm Triggered |
 | :---: | :---: |
-| ![Hardware Setup](circuit_setup.jpg) | ![Warning Screen](warning_display.jpg) |
+| ![Hardware Setup](prototype_setup.jpg) | ![Warning Screen](warning_message.jpg) |
 
 ---
 
